@@ -1,2 +1,2 @@
-module FirmHelper
+module FirmsHelper
 end
