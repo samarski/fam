@@ -1,0 +1,14 @@
+%h1 Spisak firmi
+
+%table
+  %tr
+    %th Ime
+  - @firms.each do |firm| 
+    %tr
+      %td= h firm.name
+      %td= link_to 'Show', firm
+      %td= link_to 'Edit', edit_firm_path(firm)
+      %td= link_to 'Destroy', firm, :confirm => 'Are you sure?', :method => :delete 
+
+%br
+= link_to 'Nova firma', new_firm_path

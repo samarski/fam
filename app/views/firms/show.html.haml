@@ -1,0 +1,9 @@
+%h1 Prikaz podataka o firmi
+
+%p
+  %b Name:
+  =h @firm.name
+
+= link_to 'Edit', edit_firm_path(@firm) 
+|
+= link_to 'Back', firms_path
